@@ -1,0 +1,25 @@
+#poems in the wind3 
+
+dicio = {}
+text = str(input())
+text = text.lower()
+text = text.replace("'", "")
+text = text.replace(",", "")
+text = text.replace('"', "")
+text = text.replace("?", "")
+text = text.replace("!", "")
+text = text.replace(".", "")
+separator = texto.split()
+
+for i in separator:
+  dicio.update({i: separator.count(i)})
+print(dicio)
+
+while True:
+ word = str(input()).lower()
+ if word == ".":
+  break
+ if word not in dicio:
+  print(word, "not found")
+ else:
+  print(dicio[word])
